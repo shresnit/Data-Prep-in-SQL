@@ -9,7 +9,7 @@ Through participation, my confidence in SQL has significantly increased. Below, 
 <br>
 # ✅ 2024 Solution
 
-|Challenge|SQL|Skills|
+|Challenge Page|SQL Solution |Skills|
 |---------|---|------|
 |[Week 1](https://preppindata.blogspot.com/2024/01/2024-week-1-prep-airs-flow-card.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2024/SQL/PD2024%20Week1/SQL%20Query_PD2024Week1%20Challenge.md)    |Split, Date, Filter, Condition    |
 
@@ -18,7 +18,7 @@ Through participation, my confidence in SQL has significantly increased. Below, 
 
 # ✅ 2023 Solution
 
-|Challenge|SQL|Skills|
+|Challenge Page|SQL Solution |Skills|
 |---------|---|------|
 |[Week 1](https://preppindata.blogspot.com/2023/01/2023-week-1-data-source-bank.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2023/SQL/PD2023%20Week1/SQL%20Solution%20PD2023Week1.md)  |Split, Date, Summarize, Condition    |
 |[Week 2](https://preppindata.blogspot.com/2023/01/2023-week-2-international-bank-account.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2023/SQL/PD2023%20Week2/SQL%20Solution%20PD2023W2.md)  |Joins, Concat, Cleaning  |
@@ -31,6 +31,6 @@ Through participation, my confidence in SQL has significantly increased. Below, 
 
 # ✅ 2021 Solution
 
-|Challenge|SQL|Skills|
+|Challenge Page|SQL Solution |Skills|
 |---------|---|------|
 |[Week 1](https://preppindata.blogspot.com/2021/01/2021-week-1.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2021/SQL/PD2021%20Week1/SQL%20Queries%20Solution.md)  |Split, Clean, Date, Filter   |
