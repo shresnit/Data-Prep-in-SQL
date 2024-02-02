@@ -7,6 +7,7 @@ Preppin' Data offers a weekly data preparation challenge centered on Tableau Pre
 Through participation, my confidence in SQL has significantly increased. Below, you'll find my solutions for these challenges.
 <br>
 <br>
+*Click on the icons* (❄️ - SQL), (🐍 - Python) *below to navigate to the solution page*
 # ✅ 2024 Solution
 
 |Challenge Page|SQL |Python | Skills|
