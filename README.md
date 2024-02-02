@@ -11,7 +11,7 @@ Through participation, my confidence in SQL has significantly increased. Below, 
 
 |Challenge Page|SQL |Python | Skills|
 |---------|---|-----|------|
-|[Week 1](https://preppindata.blogspot.com/2024/01/2024-week-1-prep-airs-flow-card.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2024/SQL/PD2024%20Week1/SQL%20Query_PD2024Week1%20Challenge.md)    |[🐍](https://github.com/shresnit/Data-Prep-in-SQL/blob/d2fe921195c5a277bdc80d792a083416eb084251/2024/PD2024%20Week1/Python%20Solution.ipynb)|Split, Date, Filter, Condition    |
+|[Week 1](https://preppindata.blogspot.com/2024/01/2024-week-1-prep-airs-flow-card.html)        | [❄️](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2024/PD2024%20Week1/SQL%20Solution.md)    |[🐍](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2024/PD2024%20Week1/Python%20Solution.ipynb)|Split, Date, Filter, Condition    |
 
 <br>
 <br>
@@ -20,8 +20,8 @@ Through participation, my confidence in SQL has significantly increased. Below, 
 
 |Challenge Page|SQL |Python | Skills|
 |---------|---|-----|------|
-|[Week 1](https://preppindata.blogspot.com/2023/01/2023-week-1-data-source-bank.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2023/SQL/PD2023%20Week1/SQL%20Solution%20PD2023Week1.md) | [🐍](https://github.com/shresnit/Data-Prep-in-SQL/blob/48de54d4238d9c8f9757e11afac4fa465a66f1ae/2023/PD2023%20Week1/Python%20Solution_PD2023%20Week1.ipynb)|Split, Date, Summarize, Condition    |
-|[Week 2](https://preppindata.blogspot.com/2023/01/2023-week-2-international-bank-account.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2023/PD2023%20Week2/SQL%20Solution%20PD2023W2.md) |[🐍](https://github.com/shresnit/Data-Prep-in-SQL/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2023/PD2023%20Week2/Python%20Solution_PD2023%20Week2.ipynb) |Joins, Concat, Cleaning  |
+|[Week 1](https://preppindata.blogspot.com/2023/01/2023-week-1-data-source-bank.html)        | [❄️](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2023/PD2023%20Week1/SQL%20Solution.md) | [🐍](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2023/PD2023%20Week1/Python%20Solution_PD2023%20Week1.ipynb)|Split, Date, Summarize, Condition    |
+|[Week 2](https://preppindata.blogspot.com/2023/01/2023-week-2-international-bank-account.html)        | [❄️](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2023/PD2023%20Week2/SQL%20Solution%20PD2023W2.md) |[🐍](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2023/PD2023%20Week2/Python%20Solution_PD2023%20Week2.ipynb) |Joins, Concat, Cleaning  |
 |[Week 3](https://preppindata.blogspot.com/2023/01/2023-week-3-targets-for-dsb.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2023/SQL/PD2023%20Week3/SQL%20Solution%20PD2023Week3.md)| [🐍]() |Joins, Summarize, Pivot, Cleaning  |
 |[Week 6](https://preppindata.blogspot.com/2023/02/2023-week-6-dsb-customer-ratings.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2023/SQL/PD2023%20Week6/SQL%20Solution%20for%20PD2023Week6.md)| [🐍]() |Pivot, Unpivot, Condition, Calculation  |
 |[Week 22](https://preppindata.blogspot.com/2023/05/2023-week-22-student-attendance-vs-test.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2023/SQL/PD2023%20Week22/SQL%20Solution%20for%20PD2023Week22.md)| [🐍]() |Join, Condition, Calculation, Cleaning  |
@@ -33,4 +33,4 @@ Through participation, my confidence in SQL has significantly increased. Below, 
 
 |Challenge Page|SQL |Python | Skills|
 |---------|---|-----|------|
-|[Week 1](https://preppindata.blogspot.com/2021/01/2021-week-1.html)        | [❄️](https://github.com/shresnit/Data-Prep-in-SQL/blob/78f4af7e5e5a55e5fc070dfec459cde18005febd/2021/SQL/PD2021%20Week1/SQL%20Queries%20Solution.md) |[🐍](https://github.com/shresnit/Data-Prep-in-SQL/blob/d2fe921195c5a277bdc80d792a083416eb084251/2021/PD2021%20Week1/Python%20Solution.ipynb) |Split, Clean, Date, Filter   |
+|[Week 1](https://preppindata.blogspot.com/2021/01/2021-week-1.html)        | [❄️](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2021/PD2021%20Week1/SQL%20Queries%20Solution.md) |[🐍](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2021/PD2021%20Week1/Python%20Solution.ipynb) |Split, Clean, Date, Filter   |
