@@ -1,4 +1,4 @@
-# Data Prep with SQL (Snowflake ❄️)
+# Data Prep with SQL (Snowflake ❄️) and Python (🐍)
 Solving [Preppin' Data Challenges](https://preppindata.blogspot.com/) with SQL and Python
 
 # ℹ️About
