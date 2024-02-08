@@ -4,7 +4,7 @@ Solving [Preppin' Data Challenges](https://preppindata.blogspot.com/) with SQL a
 # ℹ️About
 
 Preppin' Data offers a weekly data preparation challenge centered on Tableau Prep, with applications extending to other tools and coding languages—ideal for honing your data preparation skills.
-Through participation, my confidence in SQL has significantly increased. Below, you'll find my solutions for these challenges.
+Through participation, my confidence in SQL and Python has significantly increased. Below, you'll find my solutions for these challenges.
 <br>
 <br>
 *Click on the icons* (❄️ - SQL), (🐍 - Python) *below to navigate to the solution page*
