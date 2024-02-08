@@ -14,6 +14,7 @@ Through participation, my confidence in SQL has significantly increased. Below, 
 |---------|---|-----|------|
 |[Week 1](https://preppindata.blogspot.com/2024/01/2024-week-1-prep-airs-flow-card.html)        | [❄️](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2024/PD2024%20Week1/SQL%20Solution.md)    |[🐍](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/1df40316d02971fa25e0f0ef1b2d04ef6a5b6349/2024/PD2024%20Week1/Python%20Solution.ipynb)|Split, Date, Filter, Condition    |
 |[Week 2](https://preppindata.blogspot.com/2024/01/2024-week-2-average-price-analysis.html)        | [❄️](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/66dfd4d0ae56165dc75f619dd8abe2fceb319c25/2024/PD2024%20Week2/SQL%20Solution%20PD2024Week2.md)    |[🐍](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/273062bf64e0ab9ed8a36819da490348fbb602d6/2024/PD2024%20Week2/Python%20Solution_PD2024%20Week2.ipynb)|Union, Pivot, Aggregation, Condition    |
+|[Week 3](https://preppindata.blogspot.com/2024/01/2024-week-3-performance-against-targets.html)        | [❄️](https://github.com/shresnit/Preppin-Data-Challenges-in-SQL-Python/blob/d32f03e13c89a4313ce117ce9136be407223ed67/2024/PD2024%20Week3/SQL%20Solution%20PD2024Week3.md)    |[🐍]() |Union, Join, Aggregation, Condition    |
 
 <br>
 <br>
