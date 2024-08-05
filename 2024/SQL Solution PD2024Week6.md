@@ -8,7 +8,8 @@ Welcome to the first week of the Intermediary level challenges for 2024. This me
 <br>
 The end of January in the UK (where Prep Air is based) is when residents have to submit their income tax returns by. To help our team, we've offered to summarise their tax position for them. The UK income tax works by bands. Here's a summary table showing the percentage of tax for each pound earned in that bracket:
 <br>
-![Alt text](image.png)
+<br>
+![image](https://github.com/user-attachments/assets/0986b9be-e321-4494-95fb-af148e49b912)
 <br>
 For example, if I earned £12,571. I would pay £0.20 of tax in total: £0 for the first £12,570 earned and then 20% of the £1 in the next tax band. 
 <br>
@@ -16,24 +17,6 @@ For example, if I earned £12,571. I would pay £0.20 of tax in total: £0 for t
 
 
 **Requirements**
-- Input the data
-- For the first output:
-  - Create a dataset that gives all the customer details for booked flights in 2024. Make sure the output also includes details on the flights origin and destination
-  - When outputting the data, create an excel file with a new sheet for each output (so 1 file for all outputs this week!)
-- For the second output:
-  - Create a dataset that allows Prep Air to identify which flights have not yet been booked in 2024
-  - Add a datestamp field to this dataset for today's date (31/01/2024) so that Prep Air know the unbooked flights as of the day the workflow is run
-  - When outputting the table to a new sheet in the Excel Workbook, choose the option "Append to Table" under Write Options. This means that if the workflow is run on a different day, the results will add additional rows to the dataset, rather than overwriting the previous run's data
-- For the third output:
-  - Create a dataset that shows which customers have yet to book a flight with Prep Air in 2024
-  - Create a field which will allow Prep Air to see how many days it has been since the customer last flew (compared to 31/01/2024)
-  - Categorise customers into the following groups:
-    - Recent fliers - flown within the last 3 months
-    - Taking a break - 3-6 months since last flight
-    - Been away a while - 6-9 months since last flight
-    - Lapsed Customers - over 9 months since last flight
-  - Output the data to a new sheet in the Excel Workbook
-
 - Input the csv file
 - Add a row number to the data set
 - Find the latest row (largest row number) to capture the individuals correct salary information
@@ -49,73 +32,71 @@ For example, if I earned £12,571. I would pay £0.20 of tax in total: £0 for t
 - Total the tax paid across all three % bands. Call this field 'Total Tax Paid' 
 - Output the data
 
-*The data source is in the **PD Week5** folder*
+*The data source is in the **PD Week6** folder*
   <br>
   <br>
-
-
 
 
 **SQL Solution** (*In Snowflake*)  
 
 
-WITH 
-
-     CTE1 AS -- Definining Row Number as in the data source order
-
-        (SELECT *
-            , ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS RowID
-        FROM   PD2024W6_INPUT)
-
-    ,CTE2 AS -- Identifying Large Row Number
-
-        (SELECT *
-            , MAX(ROWID) OVER (PARTITION BY STAFFID) AS MaxRowID
-        FROM CTE1)
-
-    ,CTE3 AS -- Capturing Correct Salary Information 
-
-        (SELECT STAFFID
-        
-            , SUM(M1 + M2 + M3 + M4 + M5 + M6 + M7 + M8 + M9 + M10 + M11 + M12) AS SALARY
-            
-            , (CASE
-                WHEN SALARY <= 12570 THEN '0% Rate'
-                WHEN SALARY >=12571 AND SALARY <= 50270 THEN '20% Tax Rate'
-                WHEN SALARY >=50271 AND SALARY <= 125140 THEN '40% Tax Rate'
-                WHEN SALARY > 125140 THEN '45% Tax Rate'
-               END) AS MaxTaxRate
+      WITH 
+      
+           CTE1 AS -- Definining Row Number as in the data source order
+      
+              (SELECT *
+                  , ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS RowID
+              FROM   PD2024W6_INPUT)
+      
+          ,CTE2 AS -- Identifying Large Row Number
+      
+              (SELECT *
+                  , MAX(ROWID) OVER (PARTITION BY STAFFID) AS MaxRowID
+              FROM CTE1)
+      
+          ,CTE3 AS -- Capturing Correct Salary Information 
+      
+              (SELECT STAFFID
               
-            , (CASE
-                WHEN CONTAINS(MaxTaxRate, '20') THEN (0.2*(SALARY - 12570))
-                WHEN CONTAINS(MaxTaxRate, '40') THEN (0.2*(50270 - 12570))
-                WHEN CONTAINS(MaxTaxRate, '45') THEN (0.2*(50270 - 12570))
-               END) AS RateTaxPaid20Percent
-
-            , (CASE
-                WHEN CONTAINS(MaxTaxRate, '40') THEN (0.4*(SALARY - 50270))
-                WHEN CONTAINS(MaxTaxRate, '45') THEN (0.4*(125140 -50270))
-               END) AS RateTaxPaid40Percent 
-
-            , (CASE
-                WHEN CONTAINS(MaxTaxRate, '45') THEN (0.45*(SALARY - 125140))
-               END) AS RateTaxPaid45Percent
-
-            
-        FROM CTE2
-        WHERE RowID = MaxRowID
-        GROUP BY STAFFID)
-
-SELECT STAFFID
-    , SALARY
-    , MAXTAXRATE AS "Max Tax Rate" 
-    , SUM (ZEROIFNULL(RateTaxPaid20Percent) + ZEROIFNULL(RateTaxPaid40Percent) + ZEROIFNULL(RateTaxPaid45Percent)) AS "Total Tax Paid"
-    , RateTaxPaid20Percent AS "20% Rate Tax Paid"
-    , RateTaxPaid40Percent AS "40% Rate Tax Paid"
-    , RateTaxPaid45Percent AS "45% Rate Tax Paid"
-FROM CTE3
-GROUP BY STAFFID, SALARY, MAXTAXRATE, RateTaxPaid20Percent, RateTaxPaid40Percent, RateTaxPaid45Percent
-;
+                  , SUM(M1 + M2 + M3 + M4 + M5 + M6 + M7 + M8 + M9 + M10 + M11 + M12) AS SALARY
+                  
+                  , (CASE
+                      WHEN SALARY <= 12570 THEN '0% Rate'
+                      WHEN SALARY >=12571 AND SALARY <= 50270 THEN '20% Tax Rate'
+                      WHEN SALARY >=50271 AND SALARY <= 125140 THEN '40% Tax Rate'
+                      WHEN SALARY > 125140 THEN '45% Tax Rate'
+                     END) AS MaxTaxRate
+                    
+                  , (CASE
+                      WHEN CONTAINS(MaxTaxRate, '20') THEN (0.2*(SALARY - 12570))
+                      WHEN CONTAINS(MaxTaxRate, '40') THEN (0.2*(50270 - 12570))
+                      WHEN CONTAINS(MaxTaxRate, '45') THEN (0.2*(50270 - 12570))
+                     END) AS RateTaxPaid20Percent
+      
+                  , (CASE
+                      WHEN CONTAINS(MaxTaxRate, '40') THEN (0.4*(SALARY - 50270))
+                      WHEN CONTAINS(MaxTaxRate, '45') THEN (0.4*(125140 -50270))
+                     END) AS RateTaxPaid40Percent 
+      
+                  , (CASE
+                      WHEN CONTAINS(MaxTaxRate, '45') THEN (0.45*(SALARY - 125140))
+                     END) AS RateTaxPaid45Percent
+      
+                  
+              FROM CTE2
+              WHERE RowID = MaxRowID
+              GROUP BY STAFFID)
+      
+      SELECT STAFFID
+          , SALARY
+          , MAXTAXRATE AS "Max Tax Rate" 
+          , SUM (ZEROIFNULL(RateTaxPaid20Percent) + ZEROIFNULL(RateTaxPaid40Percent) + ZEROIFNULL(RateTaxPaid45Percent)) AS "Total Tax Paid"
+          , RateTaxPaid20Percent AS "20% Rate Tax Paid"
+          , RateTaxPaid40Percent AS "40% Rate Tax Paid"
+          , RateTaxPaid45Percent AS "45% Rate Tax Paid"
+      FROM CTE3
+      GROUP BY STAFFID, SALARY, MAXTAXRATE, RateTaxPaid20Percent, RateTaxPaid40Percent, RateTaxPaid45Percent
+      ;
         
 **Ouput**  
 |STAFFID|SALARY   |Max Tax Rate|Total Tax Paid|20% Rate Tax Paid|40% Rate Tax Paid|45% Rate Tax Paid|
