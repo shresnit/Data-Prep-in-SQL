@@ -32,7 +32,7 @@ For example, if I earned £12,571. I would pay £0.20 of tax in total: £0 for t
 - Total the tax paid across all three % bands. Call this field 'Total Tax Paid' 
 - Output the data
 
-*The data source is in the **PD Week6** folder*
+*The data source is in the **PD2024 Week6** folder*
   <br>
   <br>
 
